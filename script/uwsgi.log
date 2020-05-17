@@ -1,0 +1,378 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Sun May 17 20:07:13 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 17 May 2020 11:58:17
+os: Linux-3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017
+nodename: iZ2ze3jvr9hx3rd66hmyhtZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/sites/myblog/script
+writing pidfile to /home/sites/myblog/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/sites/myblog
+your processes number limit is 7284
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: enabled
+bind(): Cannot assign requested address [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Sun May 17 20:07:46 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 17 May 2020 11:58:17
+os: Linux-3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017
+nodename: iZ2ze3jvr9hx3rd66hmyhtZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/sites/myblog/script
+writing pidfile to /home/sites/myblog/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/sites/myblog
+your processes number limit is 7284
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: enabled
+bind(): Cannot assign requested address [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Sun May 17 20:09:48 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 17 May 2020 11:58:17
+os: Linux-3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017
+nodename: iZ2ze3jvr9hx3rd66hmyhtZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/sites/myblog/script
+writing pidfile to /home/sites/myblog/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/sites/myblog
+your processes number limit is 7284
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8000 fd 3
+uwsgi socket 0 bound to UNIX address /home/sites/myblog/script/uwsgi.sock fd 6
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Python main interpreter initialized at 0x8a3080
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x8a3080 pid: 10607 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10607)
+spawned uWSGI worker 1 (pid: 10609, cores: 1)
+spawned uWSGI worker 2 (pid: 10610, cores: 1)
+spawned uWSGI worker 3 (pid: 10611, cores: 1)
+spawned uWSGI worker 4 (pid: 10612, cores: 1)
+spawned uWSGI worker 5 (pid: 10613, cores: 1)
+spawned uWSGI http 1 (pid: 10614)
+[pid: 10609|app: 0|req: 1/1] 163.125.157.94 () {38 vars in 724 bytes} [Sun May 17 12:10:04 2020] GET / => generated 1716 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+Sun May 17 12:10:04 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 163.125.157.94) !!!
+Sun May 17 12:10:04 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (163.125.157.94)
+OSError: write error
+[pid: 10610|app: 0|req: 1/2] 163.125.157.94 () {36 vars in 651 bytes} [Sun May 17 12:10:04 2020] GET /favicon.ico => generated 0 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 0 bytes (0 switches on core 0)
+[pid: 10611|app: 0|req: 1/3] 163.125.157.94 () {38 vars in 724 bytes} [Sun May 17 12:23:25 2020] GET / => generated 1716 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+Sun May 17 12:23:26 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 163.125.157.94) !!!
+Sun May 17 12:23:26 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (163.125.157.94)
+OSError: write error
+[pid: 10612|app: 0|req: 1/4] 163.125.157.94 () {36 vars in 651 bytes} [Sun May 17 12:23:26 2020] GET /favicon.ico => generated 0 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 0 bytes (0 switches on core 0)
+[pid: 10613|app: 0|req: 1/5] 163.125.157.94 () {46 vars in 855 bytes} [Sun May 17 12:25:36 2020] GET / => generated 1716 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+Sun May 17 12:25:36 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 163.125.157.94) !!!
+Sun May 17 12:25:36 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (163.125.157.94)
+OSError: write error
+[pid: 10609|app: 0|req: 2/6] 163.125.157.94 () {40 vars in 692 bytes} [Sun May 17 12:25:36 2020] GET /favicon.ico => generated 0 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 0 bytes (0 switches on core 0)
+[pid: 10610|app: 0|req: 2/7] 163.125.157.94 () {42 vars in 777 bytes} [Sun May 17 12:25:41 2020] GET /admin/ => generated 0 bytes in 12 msecs (HTTP/1.1 302) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 10611|app: 0|req: 2/8] 163.125.157.94 () {42 vars in 814 bytes} [Sun May 17 12:25:41 2020] GET /admin/login/?next=/admin/ => generated 1650 bytes in 36 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 10612|app: 0|req: 2/9] 163.125.157.94 () {40 vars in 692 bytes} [Sun May 17 12:25:42 2020] GET /favicon.ico => generated 1960 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 10614)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/sites/myblog/script/uwsgi.sock removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Sun May 17 20:31:08 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 17 May 2020 11:58:17
+os: Linux-3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017
+nodename: iZ2ze3jvr9hx3rd66hmyhtZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/sites/myblog/script
+writing pidfile to /home/sites/myblog/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/sites/myblog
+your processes number limit is 7284
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8000 fd 3
+uwsgi socket 0 bound to UNIX address /home/sites/myblog/script/uwsgi.sock fd 6
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Python main interpreter initialized at 0x2528060
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x2528060 pid: 20785 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20785)
+spawned uWSGI worker 1 (pid: 20787, cores: 1)
+spawned uWSGI worker 2 (pid: 20788, cores: 1)
+spawned uWSGI worker 3 (pid: 20789, cores: 1)
+spawned uWSGI worker 4 (pid: 20790, cores: 1)
+spawned uWSGI worker 5 (pid: 20791, cores: 1)
+spawned uWSGI http 1 (pid: 20792)
+[pid: 20787|app: 0|req: 1/1] 163.125.157.94 () {42 vars in 814 bytes} [Sun May 17 12:31:22 2020] GET /admin/login/?next=/admin/ => generated 1650 bytes in 42 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+Sun May 17 12:31:22 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 163.125.157.94) !!!
+Sun May 17 12:31:22 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (163.125.157.94)
+OSError: write error
+[pid: 20788|app: 0|req: 1/2] 163.125.157.94 () {40 vars in 692 bytes} [Sun May 17 12:31:22 2020] GET /favicon.ico => generated 0 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 0 bytes (0 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 20792)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/sites/myblog/script/uwsgi.sock removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Sun May 17 20:33:12 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 17 May 2020 11:58:17
+os: Linux-3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017
+nodename: iZ2ze3jvr9hx3rd66hmyhtZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/sites/myblog/script
+writing pidfile to /home/sites/myblog/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/sites/myblog
+your processes number limit is 7284
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8000 fd 3
+uwsgi socket 0 bound to UNIX address /home/sites/myblog/script/uwsgi.sock fd 6
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Python main interpreter initialized at 0x2455060
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x2455060 pid: 20853 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20853)
+spawned uWSGI worker 1 (pid: 20855, cores: 1)
+spawned uWSGI worker 2 (pid: 20856, cores: 1)
+spawned uWSGI worker 3 (pid: 20857, cores: 1)
+spawned uWSGI worker 4 (pid: 20858, cores: 1)
+spawned uWSGI worker 5 (pid: 20859, cores: 1)
+spawned uWSGI http 1 (pid: 20860)
+[pid: 20856|app: 0|req: 1/1] 163.125.157.94 () {42 vars in 765 bytes} [Sun May 17 12:33:26 2020] GET / => generated 1716 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 20857|app: 0|req: 1/2] 163.125.157.94 () {40 vars in 692 bytes} [Sun May 17 12:33:27 2020] GET /favicon.ico => generated 1960 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 20860)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/sites/myblog/script/uwsgi.sock removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Sun May 17 20:34:47 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 17 May 2020 11:58:17
+os: Linux-3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017
+nodename: iZ2ze3jvr9hx3rd66hmyhtZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/sites/myblog/script
+writing pidfile to /home/sites/myblog/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/sites/myblog
+your processes number limit is 7284
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8000 fd 3
+uwsgi socket 0 bound to UNIX address /home/sites/myblog/script/uwsgi.sock fd 6
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Python main interpreter initialized at 0x14ef060
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+Traceback (most recent call last):
+  File "./myblog/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib64/python3.6/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/usr/local/lib64/python3.6/site-packages/django/__init__.py", line 22, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/usr/local/lib64/python3.6/site-packages/django/conf/__init__.py", line 56, in __getattr__
+    self._setup(name)
+  File "/usr/local/lib64/python3.6/site-packages/django/conf/__init__.py", line 41, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/local/lib64/python3.6/site-packages/django/conf/__init__.py", line 110, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "./myblog/settings.py", line 26, in <module>
+    DEBUG = false
+NameError: name 'false' is not defined
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20917)
+spawned uWSGI worker 1 (pid: 20919, cores: 1)
+spawned uWSGI worker 2 (pid: 20920, cores: 1)
+spawned uWSGI worker 3 (pid: 20921, cores: 1)
+spawned uWSGI worker 4 (pid: 20922, cores: 1)
+spawned uWSGI worker 5 (pid: 20923, cores: 1)
+spawned uWSGI http 1 (pid: 20924)
+--- no python application found, check your startup logs for errors ---
+[pid: 20920|app: -1|req: -1/1] 163.125.157.94 () {42 vars in 765 bytes} [Sun May 17 20:34:56 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+Sun May 17 20:34:56 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 163.125.157.94) !!!
+Sun May 17 20:34:56 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (163.125.157.94)
+--- no python application found, check your startup logs for errors ---
+[pid: 20921|app: -1|req: -1/2] 163.125.157.94 () {40 vars in 692 bytes} [Sun May 17 20:34:56 2020] GET /favicon.ico => generated 0 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 0 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 20922|app: -1|req: -1/3] 163.125.157.94 () {42 vars in 765 bytes} [Sun May 17 20:36:35 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+Sun May 17 20:36:36 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 163.125.157.94) !!!
+Sun May 17 20:36:36 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (163.125.157.94)
+--- no python application found, check your startup logs for errors ---
+[pid: 20923|app: -1|req: -1/4] 163.125.157.94 () {40 vars in 692 bytes} [Sun May 17 20:36:36 2020] GET /favicon.ico => generated 0 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 0 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 20919|app: -1|req: -1/5] 59.18.162.173 () {22 vars in 234 bytes} [Sun May 17 20:36:40 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 20920|app: -1|req: -1/6] 163.125.157.94 () {42 vars in 765 bytes} [Sun May 17 20:39:53 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 20921|app: -1|req: -1/7] 163.125.157.94 () {38 vars in 708 bytes} [Sun May 17 20:51:00 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 20922|app: -1|req: -1/8] 163.125.157.94 () {36 vars in 620 bytes} [Sun May 17 20:51:00 2020] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 20923|app: -1|req: -1/9] 163.125.157.94 () {36 vars in 687 bytes} [Sun May 17 20:51:03 2020] GET /admin => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 20919|app: -1|req: -1/10] 163.125.157.94 () {36 vars in 625 bytes} [Sun May 17 20:51:03 2020] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 20920|app: -1|req: -1/11] 163.125.157.94 () {40 vars in 718 bytes} [Sun May 17 20:51:08 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 20921|app: -1|req: -1/12] 163.125.157.94 () {40 vars in 656 bytes} [Sun May 17 20:51:08 2020] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 20922|app: -1|req: -1/13] 163.125.157.94 () {40 vars in 728 bytes} [Sun May 17 20:51:11 2020] GET /admin => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 20923|app: -1|req: -1/14] 163.125.157.94 () {40 vars in 661 bytes} [Sun May 17 20:51:11 2020] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 20919|app: -1|req: -1/15] 163.125.157.94 () {42 vars in 759 bytes} [Sun May 17 20:51:44 2020] GET /admin => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 20920|app: -1|req: -1/16] 163.125.157.94 () {40 vars in 661 bytes} [Sun May 17 20:51:44 2020] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 20921|app: -1|req: -1/17] 163.125.157.94 () {40 vars in 718 bytes} [Sun May 17 20:51:47 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 20922|app: -1|req: -1/18] 163.125.157.94 () {40 vars in 656 bytes} [Sun May 17 20:51:47 2020] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 20923|app: -1|req: -1/19] 163.125.157.94 () {36 vars in 677 bytes} [Sun May 17 20:52:05 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 20919|app: -1|req: -1/20] 163.125.157.94 () {36 vars in 620 bytes} [Sun May 17 20:52:05 2020] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 20920|app: -1|req: -1/21] 163.125.157.94 () {38 vars in 708 bytes} [Sun May 17 20:53:48 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 20921|app: -1|req: -1/22] 163.125.157.94 () {36 vars in 620 bytes} [Sun May 17 20:53:48 2020] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 20922|app: -1|req: -1/23] 163.125.157.94 () {40 vars in 718 bytes} [Sun May 17 20:53:51 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 20923|app: -1|req: -1/24] 163.125.157.94 () {40 vars in 656 bytes} [Sun May 17 20:53:51 2020] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 20924)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/sites/myblog/script/uwsgi.sock removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Sun May 17 20:54:13 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 17 May 2020 11:58:17
+os: Linux-3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017
+nodename: iZ2ze3jvr9hx3rd66hmyhtZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/sites/myblog/script
+writing pidfile to /home/sites/myblog/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/sites/myblog
+your processes number limit is 7284
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8000 fd 3
+uwsgi socket 0 bound to UNIX address /home/sites/myblog/script/uwsgi.sock fd 6
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Apr  2 2020, 13:34:55)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Python main interpreter initialized at 0xcdb060
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xcdb060 pid: 21171 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 21171)
+spawned uWSGI worker 1 (pid: 21173, cores: 1)
+spawned uWSGI worker 2 (pid: 21174, cores: 1)
+spawned uWSGI worker 3 (pid: 21175, cores: 1)
+spawned uWSGI worker 4 (pid: 21176, cores: 1)
+spawned uWSGI worker 5 (pid: 21177, cores: 1)
+spawned uWSGI http 1 (pid: 21178)
+[pid: 21177|app: 0|req: 1/1] 163.125.157.94 () {42 vars in 749 bytes} [Sun May 17 12:54:21 2020] GET / => generated 1716 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 21173|app: 0|req: 1/2] 163.125.157.94 () {40 vars in 656 bytes} [Sun May 17 12:54:21 2020] GET /favicon.ico => generated 1960 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
